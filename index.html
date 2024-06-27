@@ -1,13 +1,153 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>ABCCandy | Blog</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav>
+    <div class="navbar-container container">
+      <div class="grid grid-col-3 gap-2 item-center">
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">What's new ?</a>
+      </div>
+      <p class="logo">ABCcandy</p>
+      <div class="flex flex-justify-between w-300px item-center">
+        <a href="#">Community</a>
+        <a href="#">Blog</a>
+        <div>
+          <button class="button-style-01" type="button">Contact us</button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+  <main>
+    <div class="hero">
+
+      <div class="card w-850px bg-white">
+        <div class="image-header-400">
+          <img src="./public/images/image01.jpg" alt="image01">
+        </div>
+        <div>
+          <div class="card-text-container">
+            <div class="top">
+              <p class="top-sub">Design & creative</p>
+              <p class="top-date">10 June 2023</p>
+            </div>
+            <div class="middle">
+              <p class="title-32">Lorem ipsum dolor sit amet</p>
+              <p class="sub-title-18">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus mi dolor, rutrum vulputate
+                urna ullamcorper ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="bottom">
+              <button class="button-style-02" type="button">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container content-seperation">
+      <div class="flex flex-justify-between blog-header">
+
+        <div class="flex gap-2 item-center">
+          <p class="title">Blog</p>
+          <div class="flex gap-1">
+            <div class="rounded-tab">
+              Sports
+            </div>
+            <div class="rounded-tab">
+              Sports Car
+            </div>
+            <div class="rounded-tab">
+              Bike
+            </div>
+          </div>
+        </div>
+        <div>
+          <input type="text" placeholder="Search">
+        </div>
+
+      </div>
+      <div class="grid grid-col-2 gap-2 content-seperation">
+        <div class="card bg-light-blue w-full h-530px">
+          <div class="image-header-300">
+            <img src="./public/images/image01.jpg" alt="image01">
+          </div>
+          <div>
+            <div class="card-text-container">
+              <div class="top">
+                <p class="top-sub">Design & creative</p>
+                <p class="top-date">10 June 2023</p>
+              </div>
+              <div class="middle">
+                <p class="title-24">Lorem ipsum dolor sit amet</p>
+                <p class="sub-title-16">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus mi dolor, rutrum vulputate
+                  urna ullamcorper ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="bottom">
+                <p class="sub-title-16">
+                  by Jon Doe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-light-blue w-full h-530px">
+          <div class="image-header-300">
+            <img src="./public/images/image01.jpg" alt="image01">
+          </div>
+          <div>
+            <div class="card-text-container">
+              <div class="top">
+                <p class="top-sub">Coporate</p>
+                <p class="top-date">10 June 2023</p>
+              </div>
+              <div class="middle">
+                <p class="title-32">Lorem ipsum dolor sit amet</p>
+
+                <div class="bottom">
+                  <button class="button-style-02" type="button">Watch More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full relative">
+        <img class="image-430" src="./public/images/image01.jpg" alt="image01">
+        <div class="w-850px h-380px glass-effect ab-center font-white text-center">
+
+          <div class="ab-center w-full px-8">
+            <p class="title-32 ">Creative team, intuitive solution</p>
+            <p class="sub-title-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus mi
+              dolor,
+              rutrum vulputate urna
+              ullamcorper ut.</p>
+            <div class="pt-20">
+              <button class="button-style-03 ">Let's talk</button>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
