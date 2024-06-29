@@ -13,53 +13,170 @@
   <!-- navbar -->
   <nav>
     <div class="navbar-container container">
-      <div class="grid grid-col-3 gap-2 item-center">
-        <a href="#">About</a>
-        <a href="#">Service</a>
-        <a href="#">What's new ?</a>
+      <div class="desktop-nav">
+        <div class="grid grid-col-3 gap-2 item-center ">
+          <a href="#">About</a>
+          <a href="#">Service</a>
+          <a href="#">What's new ?</a>
+        </div>
       </div>
+
       <p class="logo">ABCcandy</p>
-      <div class="flex flex-justify-between w-300px item-center">
-        <a href="#">Community</a>
-        <a href="#">Blog</a>
-        <div>
-          <button class="button-style-01" type="button">Contact us</button>
+      <div class="desktop-nav">
+        <div class="flex flex-justify-between w-300px item-center">
+          <a href="#">Community</a>
+          <a href="#">Blog</a>
+          <div>
+            <button class="button-style-01 contact-us-button" type="button">Contact us</button>
+          </div>
         </div>
 
       </div>
+      <div class="mobile-nav ">
+        <div class="navigation-mobile-container">
+          <div>
+            <button class="button-style-01 contact-us-button" type="button">Contact us</button>
+          </div>
+
+          <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+            viewBox="0 0 50 50">
+            <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z">
+            </path>
+          </svg>
+        </div>
+
+      </div>
+
+
     </div>
+
+    </div>
+    </div>
+
+
+  </nav>
+  <nav class="sliding-navbar">
+    <span id="sliding-navbar-close">&times;</span>
+    <div class="mobile-navbar-container">
+      <div class="flex flex-justify-between">
+        <p class="logo">ABCcandy</p>
+        <button class="button-style-01 contact-us-button" type="button">Contact us</button>
+      </div>
+
+      <a href="#">About</a>
+      <a href="#">Service</a>
+      <a href="#">What's new ?</a>
+      <a href="#">Community</a>
+      <a href="#">Blog</a>
+
+      <div class="flex flex-justify-between text-white" id="nav-footer">
+        <p class="dm-sans">&copy; ABCcandy Bangladesh</p>
+        <div class="flex gap-1">
+          <a href="#" class="text-white">Terms of Use</a>
+          <a href="#" class="text-white">Privacy & policy</a>
+        </div>
+      </div>
+    </div>
+
   </nav>
   <!-- navbar -->
   <main>
-    <div class="hero">
+    <div class="bg-gradient">
 
-      <div class="card w-850px bg-white">
-        <div class="image-header-400">
-          <img src="./public/images/image01.jpg" alt="image01">
-        </div>
-        <div>
-          <div class="card-text-container">
-            <div class="top">
-              <p class="top-sub">Design & creative</p>
-              <p class="top-date">10 June 2023</p>
-            </div>
-            <div class="middle">
-              <p class="title-32">Lorem ipsum dolor sit amet</p>
-              <p class="sub-title-18">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus mi dolor, rutrum vulputate
-                urna ullamcorper ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="bottom">
-              <button class="button-style-02" type="button">Read More</button>
+    </div>
+    <!-- carousel -->
+    <section class="hero">
+
+      <div class="slideshow-container" id="carousel">
+        <div class="card w-850px bg-white slide-card-01 slide">
+          <div class="image-header-400">
+            <img src="/images/image01.jpg" alt="image01">
+          </div>
+          <div>
+            <div class="card-text-container">
+              <div class="top">
+                <p class="top-sub">Design & creative</p>
+                <p class="top-date">10 June 2023</p>
+              </div>
+              <div class="middle">
+                <p class="title-32 ">Lorem ipsum dolor sit amet</p>
+                <p class="sub-title-18 font-lightPurple">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus mi dolor, rutrum vulputate
+                  urna ullamcorper ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="bottom">
+                <button class="button-style-02" type="button">Read More</button>
+              </div>
             </div>
           </div>
         </div>
+        <div class="card w-850px bg-white slide-card-02 slide">
+          <div class="image-header-400">
+            <img src="/images/image07.jpg" alt="image01">
+          </div>
+          <div>
+            <div class="card-text-container">
+              <div class="top">
+                <p class="top-sub">Design & creative</p>
+                <p class="top-date">10 June 2023</p>
+              </div>
+              <div class="middle">
+                <p class="title-32">Lorem ipsum dolor sit amet</p>
+                <p class="sub-title-18 font-lightPurple">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus mi dolor, rutrum vulputate
+                  urna ullamcorper ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="bottom">
+                <button class="button-style-02" type="button">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card w-850px bg-white slide-card-03 slide">
+          <div class="image-header-400">
+            <img src="/images/image05.jpg" alt="image01">
+          </div>
+          <div>
+            <div class="card-text-container">
+              <div class="top">
+                <p class="top-sub">Design & creative</p>
+                <p class="top-date">10 June 2023</p>
+              </div>
+              <div class="middle">
+                <p class="title-32">Lorem ipsum dolor sit amet</p>
+                <p class="sub-title-18 font-lightPurple">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus mi dolor, rutrum vulputate
+                  urna ullamcorper ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="bottom">
+                <button class="button-style-02" type="button">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrow-container">
+          <a class="prev bg-deep-purple arrow">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nGNgGAWjYBSgA1YGBoZEBhoavo6BgeE/rQ3/TwsLViMZTi18GNmCVTSw4BB6EK2lZRCBADMDA8NyWloA80kKmDUKRsEoYKAWAACC9zQ+PKL3aAAAAABJRU5ErkJggg==" />
+          </a>
+          <a class="next bg-deep-purple arrow">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAOUlEQVR4nGNgGAWjYBRQG3Qw0Bj8p7Ul/3FZ8p8GuIPWFtTTMojqaWE4A60NB4EGMDkKRsEoYEAGAADkM+50yjcKAAAAAElFTkSuQmCC" /></a>
+        </div>
+        <div class="dot-indicator">
+          <ul class="dot-container">
+
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="container content-seperation">
+
+    </section>
+
+
+    <div class="container  ">
       <div class="flex flex-justify-between blog-header">
 
-        <div class="flex gap-2 item-center">
+        <div class="flex gap-2 item-center blog-title-container">
           <p class="title">Blog</p>
           <div class="flex gap-1">
             <div class="rounded-tab">
@@ -73,15 +190,26 @@
             </div>
           </div>
         </div>
-        <div>
-          <input type="text" placeholder="Search">
+        <div class="search-container">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+            <path
+              d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z">
+            </path>
+          </svg>
+          <input class="search" type="text" placeholder="Search">
         </div>
 
       </div>
-      <div class="grid grid-col-2 gap-2 content-seperation">
+      <div class="grid grid-col-2 gap-2 pt-40">
         <div class="card bg-light-blue w-full h-530px">
-          <div class="image-header-300">
-            <img src="./public/images/image01.jpg" alt="image01">
+          <div class="carousel-card-image-container">
+            <img class="card-image" src="/images/image01.jpg" alt="image01">
+            <img class="card-image" src="/images/image02.jpg" alt="image01">
+            <img class="card-image" src="/images/image03.jpg" alt="image01">
+            <div class="dot-indicator">
+              <ul class="dot-container">
+              </ul>
+            </div>
           </div>
           <div>
             <div class="card-text-container">
@@ -91,7 +219,7 @@
               </div>
               <div class="middle">
                 <p class="title-24">Lorem ipsum dolor sit amet</p>
-                <p class="sub-title-16">
+                <p class="sub-title-16 font-lightPurple">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus mi dolor, rutrum vulputate
                   urna ullamcorper ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
@@ -102,9 +230,12 @@
             </div>
           </div>
         </div>
-        <div class="card bg-light-blue w-full h-530px">
-          <div class="image-header-300">
-            <img src="./public/images/image01.jpg" alt="image01">
+        <div class="card bg-light-blue w-full h-530px ">
+          <div class="video-container">
+            <video class="video01" src="/videos/video01.mp4" muted></video>
+            <p class="video-watch-now">Watch Now <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyElEQVR4nO2ayY9NURDGf2jdjxb0o00rEgtCsBZbQ5v1zrgibLROY2nY2GAlJGz5D9AROkgniHnYmK0MiXEh9JDGk4rvJBXe6373vnvfe93xJTd53XVO1albdarq1LnwH0MXWWAtcARoB54CX4BePfb7iWg2Zg3QQJUgA2wGLgE/gVzE5wdwEdgE1FVCgVHAbuCdW1QPcAXYJ8vM1hsfqadB/zPafuCq5oT5b4E2vZyyYAXwyi3gDrAVGBeD13hgG3DX8XsJNJEi7E2ddALvAUsS5L8MeOD4n0jDOlO0cBPwHdgJjEhaCH947gK6nLUnJ8V8hsydU9SZS/qYBzyTzBdaQ0lodAxvAxMpHxqAa5L9Sl4RCxnnTjeAesqPeuCmc7NYe+akcydLdpXCBOcVFgAih9iwscuxJ4rZM11ak0W3opNdyBMWnYrFXqCW9NDqNn9RLrbH5YkoITYnF0grmdUADyXHlOoXdSoVbPDiiIJ8DdWhciRpLBf/dwNZZZOLEFERlPjqaq9DCUe7YS6SbuhvYIcGWe0UV5GpwClXDZuFt2gRSWC7+F4oNCCrsronZgEYFAlY6N6ePZ2KPkkkyl6gr9A610ng5ZgC/lbEMFzWeC+aWem0KoZS0Cl+q/IRj4po54mkFPHWPi6L25iPchFTNA4Ois/hfMR2EVenoEjALJ0mw1gr2xfFkLVO88/mIz4XcXaKiqBNvx54rfG/gDPAtAiy5miu9QX+wWcRsykrEjBaLtKted/0dzFn94ma8yEfsVfE2jIpEjATOO/mPwOWDjCnzuWqoavI50HkWo39udaQ2eztIloHsFzh937M8NvcX/gNCdGaZ4M6Ia4V0bqFg6VEWVmoGAtFo3UAq7VozLqicWyhQRcl1NqY1VrG7xBf29MFsVGDrBdbrQer++Jvka8gLIa/0cCBklIljrorxf91MfmmzYXGams+PJKclmImZFyv1xrK1dIOanMvq+hLoSZN6koo0pSKBa6UiXyVccK9AWtbVgqNasrZWo7FYZBRWyinRnIlmthjgFtaw61S7hkbVZiFa4VSM3LUxHddsl8mceEzw5nW3Gw+5dkTLyTTqvLpSTGe7NysS71XC4dJo0bRqdu506SkhWRcAMipodyUYMa2q4yQJ8LGTvXufZkze+jab4/5FUNWtVMoO3JypSRviwe0TqsrZ3KqSK3CPaC+0xyF7Vo9E3Rp1Kwxna5PEMqOlkp9AVGnrvgFd2iK8vSpil1fKQXyYZx6sXZqO6e7x0/uoxr7/VjH08MaW/A88R8McvwG7cmJMJrsvR0AAAAASUVORK5CYII=">
+            </p>
           </div>
           <div>
             <div class="card-text-container">
@@ -113,28 +244,27 @@
                 <p class="top-date">10 June 2023</p>
               </div>
               <div class="middle">
-                <p class="title-32">Lorem ipsum dolor sit amet</p>
+                <p class="title-32 ">Lorem ipsum dolor sit amet</p>
 
                 <div class="bottom">
-                  <button class="button-style-02" type="button">Watch More</button>
+                  <button class="button-style-02" id="watch-more-button" type="button">Watch More</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="w-full relative">
-        <img class="image-430" src="./public/images/image01.jpg" alt="image01">
+      <section class="w-full relative pt-40">
+        <img class="image-430" src="/images/image06.jpg" alt="image01">
         <div class="w-850px h-380px glass-effect ab-center font-white text-center">
 
-          <div class="ab-center w-full px-8">
-            <p class="title-32 ">Creative team, intuitive solution</p>
-            <p class="sub-title-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus mi
-              dolor,
-              rutrum vulputate urna
-              ullamcorper ut.</p>
+          <div class="ab-center w-full px-8" id="glass-effect-container">
+            <p class="title-32">Creative team, intuitive solution</p>
+            <p class="sub-title-16 font-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus
+              mi
+              dolor.</p>
             <div class="pt-20">
-              <button class="button-style-03 ">Let's talk</button>
+              <button class="button-style-03 contact-us-button">Let's talk</button>
             </div>
 
           </div>
@@ -142,11 +272,238 @@
 
 
         </div>
-      </div>
+      </section>
+      <section class="grid grid-col-300 gap-4 pt-40">
+        <div class="card w-full bg-light-blue">
+          <div class="image-header-400">
+            <img src="/images/image03.jpg" alt="image01">
+          </div>
+          <div>
+            <div class="card-text-container">
+              <div class="top">
+                <p class="top-sub">Development</p>
+                <p class="top-date">10 June 2023</p>
+              </div>
+              <div class="middle">
+                <p class="title-32">Lorem ipsum dolor sit amet</p>
+                <p class="sub-title-18 font-lightPurple">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus mi dolor, rutrum vulputate
+                  urna ullamcorper ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="bottom">
+                <button class="button-style-02" type="button">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" w-full  relative " id="creative-card">
 
-    </div>
+          <img class="image-600" src="/images/image09.jpg" alt="image01">
+          <div class="w-280px h-160px bg-white ab-bottom pt-10 px-2 ">
+            <p class="uppercase-title">Do you need any creative service for business?</p>
+            <div class="pt-10">
+              <button type="button" class="button-style-01">Let's talk</button>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+      <section class="pt-40 pb-8">
+        <div class="grid grid-col-3 gap-2" id="blog-items-container">
+          <div class="card bg-light-blue w-full h-530px blog-item">
+            <div class="image-header-300">
+              <img src="/images/image04.jpg" alt="image01">
+            </div>
+            <div>
+              <div class="card-text-container">
+                <div class="top">
+                  <p class="top-sub">Design & creative</p>
+                  <p class="top-date">10 June 2023</p>
+                </div>
+                <div class="middle">
+                  <p class="title-24">Lorem ipsum dolor sit amet</p>
+                  <p class="sub-title-16 font-lightPurple">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="bottom">
+                  <p class="sub-title-16">
+                    by Jon Doe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-light-blue w-full h-530px blog-item">
+            <div class="image-header-300">
+              <img src="/images/image07.jpg" alt="image01">
+            </div>
+            <div>
+              <div class="card-text-container">
+                <div class="top">
+                  <p class="top-sub">Design & creative</p>
+                  <p class="top-date">10 June 2023</p>
+                </div>
+                <div class="middle">
+                  <p class="title-24">Lorem ipsum dolor sit amet</p>
+                  <p class="sub-title-16 font-lightPurple">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="bottom">
+                  <p class="sub-title-16">
+                    by Jon Doe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-light-blue w-full h-530px blog-item">
+            <div class="image-header-300">
+              <img src="/images/image08.jpg" alt="image01">
+            </div>
+            <div>
+              <div class="card-text-container">
+                <div class="top">
+                  <p class="top-sub">Design & creative</p>
+                  <p class="top-date">10 June 2023</p>
+                </div>
+                <div class="middle">
+                  <p class="title-24">Lorem ipsum dolor sit amet</p>
+                  <p class="sub-title-16 font-lightPurple">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="bottom">
+                  <p class="sub-title-16">
+                    by Jon Doe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-light-blue w-full h-530px blog-item">
+            <div class="image-header-300">
+              <img src="/images/image01.jpg" alt="image01">
+            </div>
+            <div>
+              <div class="card-text-container">
+                <div class="top">
+                  <p class="top-sub">Design & creative</p>
+                  <p class="top-date">10 June 2023</p>
+                </div>
+                <div class="middle">
+                  <p class="title-24">Lorem ipsum dolor sit amet</p>
+                  <p class="sub-title-16 font-lightPurple">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="bottom">
+                  <p class="sub-title-16">
+                    by Jon Doe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-light-blue w-full h-530px blog-item">
+            <div class="image-header-300">
+              <img src="/images/image05.jpg" alt="image01">
+            </div>
+            <div>
+              <div class="card-text-container">
+                <div class="top">
+                  <p class="top-sub">Design & creative</p>
+                  <p class="top-date">10 June 2023</p>
+                </div>
+                <div class="middle">
+                  <p class="title-24">Lorem ipsum dolor sit amet</p>
+                  <p class="sub-title-16 font-lightPurple">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="bottom">
+                  <p class="sub-title-16">
+                    by Jon Doe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center pt-40">
+          <div>
+            <button class="button-style-02 " id="load-more-button">Load More</button>
+          </div>
+        </div>
+
+      </section>
+
   </main>
+  <footer class="w-full bg-deep-purple">
+    <div class="container py-4">
+      <div class="">
+        <p class="title-24 text-white">Connect with us</p>
+        <div class="social-container flex gap-1 pt-20">
+          <div class="rounded-social">
+            <img src="/icons/fb.svg" alt="facebook">
+          </div>
+          <div class="rounded-social">
+            <img src="/icons/insta.svg" alt="facebook">
+          </div>
+          <div class="rounded-social">
+            <img src="/icons/x.svg" alt="facebook">
+          </div>
+          <div class="rounded-social">
+            <img src="/icons/youtube.svg" alt="facebook">
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-justify-between text-white pt-8 pb-4 footer-text-container">
+        <p class="dm-sans">&copy; ABCcandy Bangladesh</p>
+        <div class="flex gap-1">
+          <a href="#" class="text-white">Terms of Use</a>
+          <a href="#" class="text-white">Privacy & policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="video-popup">
+    <span id="video-popup-close">&times;</span>
+    <video src="#" id="video-source" muted autoplay controls></video>
+  </div>
 
+  <div id="contact-us-modal">
+    <div class="container">
+      <div class="header">
+        <h3>Contact Us</h3>
+        <span id="contact-us-close">&times;</span>
+      </div>
+      <form action="#"></form>
+      <div class="form-container">
+
+        <div class="two-section">
+          <div class="input-container">
+            <label for="your_name">Your Name</label>
+            <input type="text" name="firstname" id="your_name" placeholder="Enter Your Name">
+          </div>
+          <div class="input-container">
+            <label for="email">Enter Email</label>
+            <input type="text" name="email" id="email" placeholder="Enter Your Email">
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="subject">Select Subject</label>
+          <select id="subjects">
+            <option value="it">IT Information</option>
+            <option value="saab">Digital Marketing</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="your_message">Your Message</label>
+          <textarea name="your_message" id="your_message" placeholder="Enter your message"></textarea>
+        </div>
+        <div class="button-container">
+          <button class="button-style-01">Send Message</button>
+        </div>
+
+      </div>
+      </form>
+    </div>
+
+  </div>
   <script type="module" src="/main.js"></script>
 </body>
 
